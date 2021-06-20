@@ -8,7 +8,6 @@ const MenuItemStyles = styled.div`
   align-content: center;
   align-items: center;
   position: relative;
-  max-height: 100px;
   .gatsby-image-wrapper {
     grid-row: span 2;
     height: 100%;
@@ -32,6 +31,10 @@ const MenuItemStyles = styled.div`
     right: 0;
     box-shadow: none;
     line-height: 1rem;
+  }
+
+  @media (min-width: 900px) {
+    max-height: 100px;
   }
 `;
 
