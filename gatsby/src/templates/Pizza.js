@@ -8,6 +8,15 @@ const PizzaGrid = styled.div`
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  .gatsby-image-wrapper {
+    max-width: calc(100% - 11.5rem);
+  }
+
+  @media (min-width: 900px) {
+    .gatsby-image-wrapper {
+      max-width: 100%;
+    }
+  }
 `;
 
 export default function SinglePizzaPage({ data: { pizza } }) {
